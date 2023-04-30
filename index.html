@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Converter App - Convert various types of units">
+    <meta name="author" content="Adam Donen">
+    <title>Converter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>Converter</h1>
+</header>
+
+<div>
+    <h2>Conversion Type</h2>
+    <div id="conversionType">
+        <ul>
+            <li data-value="Currency" id="currencyLink">Currency</li>
+            <li data-value="Time" id="timeLink">Time</li>
+            <li data-value="Distance" id="distanceLink">Distance</li>
+            <li data-value="Weight" id="weightLink">Weight</li>
+            <li data-value="Temperature" id="temperatureLink">Temperature</li>
+            <li data-value="Data" id="dataLink">Data</li>
+        </ul>
+        <h2 id="conversionTypeDisplay">Currency</h2>
+    </div>
+
+
+    <main>
+
+
+    <div>
+        <label for="fromUnit">From:</label>
+        <select id="fromUnit"></select>
+    </div>
+
+    <div>
+        <label for="toUnit">To:</label>
+        <select id="toUnit"></select>
+    </div>
+
+    <div>
+        <label for="inputValue">Value:</label>
+        <input type="text" id="inputValue">
+    </div>
+
+    <div>
+        <label for="convertedValue">Converted Value:</label>
+        <input type="text" id="convertedValue" readonly>
+    </div>
+
+    <button id="convertButton">Convert</button>
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
