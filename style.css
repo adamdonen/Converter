@@ -122,7 +122,7 @@ label {
     align-content: center;
     text-align: center;
     margin: 1.2rem 1.7rem;
-    border:5px solid white;
+
 }
 
 .input-container >div{
@@ -170,4 +170,29 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+.github{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 85%;
+}
+
+.fa{
+    margin: .12rem 1.3rem;
+}
+.github a{
+    text-decoration: none;
+    background-color: #282c34;
+    padding:10px 10px;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.github a:hover{
+    background-color: #111;
 }
