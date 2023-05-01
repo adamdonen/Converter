@@ -20,6 +20,7 @@ To run the Converter App locally, follow these steps:
     `cd converter-app`
 
 3. Open the `index.html` file in your preferred web browser.
+4. Optionally: Visit the site hosted on Netlify: https://unitconverteradamdonen.netlify.app
 
 ## Usage
 
