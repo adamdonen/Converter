@@ -15,47 +15,50 @@
     <h1>Converter</h1>
 </header>
 
-<div>
-    <h2>Conversion Type</h2>
+<div class="pick-type">
+    <h2>Conversion Options</h2>
     <div id="conversionType">
         <ul>
             <li data-value="Currency" id="currencyLink">Currency</li>
-            <li data-value="Time" id="timeLink">Time</li>
+            <li class="active" data-value="Time" id="timeLink">Time</li>
             <li data-value="Distance" id="distanceLink">Distance</li>
             <li data-value="Weight" id="weightLink">Weight</li>
             <li data-value="Temperature" id="temperatureLink">Temperature</li>
-            <li data-value="Data" id="dataLink">Data</li>
+            <li  data-value="Data" id="dataLink">Data</li>
         </ul>
         <h2 id="conversionTypeDisplay">Currency</h2>
     </div>
+</div>
 
-
-    <main>
-
-
+<div class="main">
+    <div class="main-container">
+        <div class="unit-container">
     <div>
         <label for="fromUnit">From:</label>
-        <select id="fromUnit"></select>
+        <select id="fromUnit" class="unit-list" size="7"></select>
     </div>
-
     <div>
         <label for="toUnit">To:</label>
-        <select id="toUnit"></select>
+        <select id="toUnit" class="unit-list" size="7"></select>
     </div>
-
+        </div>
+        <div class ="input-container">
     <div>
-        <label for="inputValue">Value:</label>
+        <label for="inputValue">Value</label>
         <input type="text" id="inputValue">
     </div>
-
     <div>
         <label for="convertedValue">Converted Value:</label>
         <input type="text" id="convertedValue" readonly>
     </div>
+        <div>
+        <button id="convertButton">Convert</button>
+        </div>
+        </div>
+    </div>
+</div>
 
-    <button id="convertButton">Convert</button>
-</main>
-<script src="script.js"></script>
+<script src="script.js" type="module"></script>
 </body>
 
 </html>
